@@ -1,0 +1,13 @@
+image: python:latest
+stages:
+- test
+pytest:
+  stage: test
+  script:
+    - python3 -m pip install -r requirements.txt
+    - python3 -m pip install requests
+    - pytest --junitxml=report.xml
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml
