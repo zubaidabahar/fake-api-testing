@@ -24,7 +24,8 @@ def test_03_list_one_product():
     list_one_product = requests.get(url=BASE_URI+"/products/1", headers=headers, verify=False)
     assert list_one_product.status_code == 200
 
-    '''Verifying the id of the response, to confirm that
+    '''
+        Verifying the id of the response, to confirm that
         the response is exactly from the product with the id
         specified on the request
     '''

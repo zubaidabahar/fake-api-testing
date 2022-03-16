@@ -22,7 +22,6 @@ beign returned
   #  list = requests.get(url=BASE_URI+"/products/categories"+category, headers=headers, verify=False)
    # assert list.status_code == 200
 
-    ''' Verifying if the category on the response
-         is the same as the one specified   
-    '''
+    # Verifying if the category on the response is the same as the one specified
+
     #assert_that(list.json()['category']).is_equal_to(category)
