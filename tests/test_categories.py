@@ -18,5 +18,4 @@ def test_02_list_products_specific_category():
     ''' Verifying if the category on the response
          is the same as the one specified   
     '''
-
     assert_that(list.json()['category']).is_equal_to(category)
